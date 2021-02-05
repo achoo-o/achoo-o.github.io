@@ -1,16 +1,62 @@
-header {
-    background: blue;
-    padding-top: 1px;
-}
+/*
+Green: #0A8754
+Black: #080F0F
+Red: #B20D30
+White: #F0F7F4
+*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap');
 
-h1 {
-    color: white;
-    padding-left: 1rem;
+html {
+    background: rgb(190, 190, 190);
 }
 
 body {
-    padding: 30px;
+    margin: auto;
+    padding: 0;
+}
+
+html, body {
+    /*height: 100%;*/
+}
+
+header {
+    background: #202020;
+    padding: 0; 
+    border-top: 1px solid #202020;
+    padding-top: 28px;
+}
+
+h1 {
+    color: #F0F7F4;
+    font-size: 28px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-left: 1rem;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+
+p {
+    font-family: 'Optima', Optima, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 10px;
     margin: 0;
+}
+
+a, a:visited {
+    color: #B20D30;
+}
+
+.content {
+    padding: 1px 30px 20px 20px;
+    margin: auto;
+    background: white;
+    position: static;
+    width: 80%;
 }
 /**********************
 *    Dropdown Menu    *
@@ -21,11 +67,13 @@ nav a {
 }
 
 nav {
-    margin: 0;
+    margin-bottom: 35px;
+    font-family: 'Optima', Optima, sans-serif;
+    font-size: 14px;
 }
 
 nav ul {
-    background: darkorange;
+    background: #B20D30;
     list-style: none;
     margin: 0;
     padding-left: 0;
@@ -33,7 +81,7 @@ nav ul {
 
 nav li {
     color: #ffff;
-    background: darkorange;
+    background: #B20D30;
     display: inline-block;
     padding: 1rem;
     position: relative;
@@ -41,12 +89,12 @@ nav li {
     transition-duration: 0.5s;
 }
 
-nav li a {
+nav li a, nav li a:visited {
     color: #ffff;
 }
 
 nav li:hover, nav li:focus-within {
-    background: grey;
+    background: #880924;
     cursor: pointer;
 }
 
@@ -55,13 +103,13 @@ nav li:focus-within {
 }
 
 nav ul li ul{
-    background: grey;
+    background: #880924;
     visibility: hidden;
     opacity: 0;
     min-width: 5rem;
     position: absolute;
     transition: all 0.5s ease;
-    margin-top: 1rem;
+
     left: 0;
     display: none;
 }
@@ -78,4 +126,5 @@ ul li ul:focus {
 nav ul li ul li{
     clear: both;
     width: 100%;
+    z-index: 1;
 }
