@@ -24,8 +24,13 @@ body {
 **************************/
 
 #nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 20px;
   background-color: var(--mid-c);
+  box-shadow: 0 2px 10px var(--dark-c);
   color: var(--light-grey);
 }
 
@@ -55,7 +60,7 @@ body {
   line-height: 3em;
 
   padding: 5vh 6vw;
-  margin: 8vh 10vw;
+  margin: 20vh 10vw 8vh 10vw;
 }
 
 /*Elements*/
