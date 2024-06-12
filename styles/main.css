@@ -1,0 +1,127 @@
+html {
+  /* Basic Colours */
+  --white: #fff;
+  --light-grey: #e0e0e0;
+  /* Dark Palette */
+  --dark-c: #000814;
+  --mid-c: #001d3d;
+  --light-c: #f6e9b2;
+  --accent-c: #ffd60a;
+  --dark-accent-c: #ffc300;
+  /* HTML Styling*/
+  background-color: var(--dark-c);
+  min-width: 300px;
+}
+
+body {
+  margin: 0;
+}
+
+/*************************
+*     Navigation Bar     *
+**************************/
+
+#nav {
+  padding: 20px;
+  background-color: var(--mid-c);
+  color: var(--light-grey);
+}
+
+#nav ul {
+  /* Styles list */
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 70%;
+}
+
+#nav li {
+  /* Displays list horizontally */
+  display: inline;
+}
+
+/*************************
+*      Main Content      *
+**************************/
+
+/*Wraps all content inside body*/
+#content-wrapper {
+  background-color: var(--mid-c, #fff);
+  border-radius: 16px;
+
+  color: var(--light-grey);
+  line-height: 3em;
+
+  padding: 5vh 6vw;
+  margin: 8vh 10vw;
+}
+
+/*Sections within the content wrapper*/
+
+h1,
+h2,
+h3 {
+  color: var(--dark-accent-c);
+  margin: 0;
+}
+
+h1 {
+  margin: 5px;
+}
+
+p {
+  color: var(--light-grey);
+  font-size: 22px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 400px;
+}
+
+/*****   COLUMNS   *****/
+
+/* For Desktop */
+@media only screen and (min-width: 1000px) {
+  .column,
+  .one-third,
+  .two-thirds {
+    margin: 0;
+  }
+
+  .column {
+    box-sizing: border-box; /* Tells browser to include border & padding in width */
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+  }
+
+  .one-third {
+    width: 33%;
+    max-width: 33%;
+    text-align: center;
+  }
+
+  .two-thirds {
+    width: 66%;
+    max-width: 66%;
+  }
+}
+
+/* For Smaller Devices */
+
+.column {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+/*Shapes */
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--light-grey, lightgray);
+  margin-bottom: 25px;
+}
