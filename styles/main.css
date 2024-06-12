@@ -9,7 +9,7 @@ html {
   --accent-c: #ffd60a;
   --dark-accent-c: #ffc300;
   /* Sizing */
-  --spacer-height: 80px;
+  --spacer-height: 70px;
   /* HTML Styling*/
   background-color: var(--dark-c);
   min-width: 300px;
@@ -90,6 +90,14 @@ img {
   border-radius: 5px;
 }
 
+.post {
+  margin: 10px 0;
+  padding: 3px 20px;
+  height: 250px;
+  background-color: rgb(122, 149, 166);
+  border-radius: 5px;
+}
+
 /* For Desktop */
 @media only screen and (min-width: 1000px) {
   /*****   COLUMNS   *****/
@@ -124,6 +132,14 @@ img {
     margin: 0 0.8em;
     padding: 3px 20px;
     height: 350px;
+    background-color: rgb(122, 149, 166);
+    border-radius: 5px;
+  }
+
+  .post {
+    margin: 0 0.8em;
+    padding: 3px 20px;
+    height: 250px;
     background-color: rgb(122, 149, 166);
     border-radius: 5px;
   }
