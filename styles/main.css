@@ -72,22 +72,36 @@ h1 {
 }
 
 p {
+  margin: 0;
   color: var(--light-grey);
-  font-size: 22px;
+  font-size: 20px;
 }
 
 img {
   max-width: 100%;
-  margin: 0 10px;
 }
 
 /*  For Mobile */
+.column {
+}
+
 .project {
   margin: 10px 0;
-  padding: 3px 20px;
+  padding: 30px;
   height: 350px;
   background-color: rgb(122, 149, 166);
   border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  word-wrap: break-word; /* Truncates project text */
+  line-height: 1.8em;
+}
+
+.project-thumbnail {
+  padding-bottom: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  height: 200px;
 }
 
 .post {
@@ -129,11 +143,17 @@ img {
   }
 
   .project {
-    margin: 0 0.8em;
-    padding: 3px 20px;
-    height: 350px;
+    margin: 10px;
+    padding: 20px 30px;
     background-color: rgb(122, 149, 166);
     border-radius: 5px;
+    line-height: normal;
+    font-size 10px;
+  }
+
+  .project-thumbnail {
+    min-width: 90%;
+    padding-bottom: 1em;
   }
 
   .post {
