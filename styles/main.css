@@ -113,7 +113,7 @@ img {
 }
 
 /* For Desktop */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 940px) {
   /*****   COLUMNS   *****/
   .column,
   .one-third,
