@@ -82,8 +82,8 @@ img {
 }
 
 /*  For Mobile */
-.column {
-}
+/*.column {
+}*/
 
 .project {
   margin: 10px 0;
@@ -148,7 +148,7 @@ img {
     background-color: rgb(122, 149, 166);
     border-radius: 5px;
     line-height: normal;
-    font-size 10px;
+    font-size: 10px;
   }
 
   .project-thumbnail {
