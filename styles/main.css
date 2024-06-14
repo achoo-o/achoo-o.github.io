@@ -112,6 +112,7 @@ img {
   display: inline-block;
   vertical-align: middle;
   height: 200px;
+  box-shadow: none;
 }
 
 .post {
