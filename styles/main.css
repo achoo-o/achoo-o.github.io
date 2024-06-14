@@ -2,16 +2,14 @@ html {
   /* Basic Colours */
   --white: #fff;
   --light-grey: #e0e0e0;
-  /* Dark Palette */
-  --dark-c: #000814;
-  --mid-c: #001d3d;
-  --light-c: #f6e9b2;
-  --accent-c: #ffd60a;
-  --dark-accent-c: #ffc300;
+  /* Text Colours */
+  --special-color: rgb(155, 155, 155);
+  --p-color: rgb(36, 36, 36);
+  --h1-color: black;
+  --h4-color: rgb(61, 61, 61);
   /* Sizing */
   --spacer-height: 70px;
   /* HTML Styling*/
-  background-color: var(--dark-c);
   min-width: 300px;
 }
 
@@ -24,14 +22,14 @@ body {
 **************************/
 
 #nav {
-  position: fixed;
+  height: 10vh;
   top: 0;
   left: 0;
   width: 100%;
   padding: 20px;
-  background-color: var(--mid-c);
-  box-shadow: 0 2px 10px var(--dark-c);
-  color: var(--light-grey);
+  background-color: rgb(245, 245, 245);
+  box-shadow: 0 2px 10px var(--light-grey);
+  color: var(--p-color);
 }
 
 #nav ul {
@@ -53,34 +51,33 @@ body {
 
 /*Wraps all content inside body*/
 #content-wrapper {
-  background-color: var(--mid-c, #fff);
   border-radius: 16px;
 
-  color: var(--light-grey);
   line-height: 3em;
 
   padding: 5vh 6vw;
-  margin: 20vh 10vw 8vh 10vw;
+  margin: 0 10vw;
 }
 
 /*Elements*/
 
-h1,
+h1 {
+  color: var(--h1-color);
+  margin: 5px;
+  text-align: left;
+}
+
 h2,
 h3,
 h4 {
-  color: var(--dark-accent-c);
   margin: 0;
   text-align: left;
 }
 
-h1 {
-  margin: 5px;
-}
-
 p {
   margin: 0;
-  color: var(--light-grey);
+  margin-bottom: 20px;
+  color: var(--p-color);
   font-size: 20px;
   text-align: left;
 }
@@ -124,7 +121,7 @@ img {
 }
 
 .post h4 {
-  color: var(--dark-c, black);
+  color: var(--h4-color, black);
 }
 
 /* For Desktop */
@@ -183,8 +180,8 @@ img {
 /*****   SHAPES & SPACERS  *****/
 .line {
   width: 100%;
-  height: 1px;
-  background-color: var(--light-grey, lightgray);
+  height: 2px;
+  background-color: rgba(95, 95, 95, 0.4);
   margin-bottom: 25px;
 }
 
