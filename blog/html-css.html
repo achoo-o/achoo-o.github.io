@@ -21,7 +21,103 @@
     </div>
     <div id="content-wrapper">
       <!-- About Section -->
-      <h1>Relative, Fixed, and Absolute positioning.</h1>
+      <h1>Relative, Absolute, and Fixed positioning.</h1>
+      <p>
+        There are many ways to move things around the page to create the layout
+        you want. In this post, I'll be talking about the
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">
+          position attribute.</a
+        >
+      </p>
+      <p>
+        The position attribute can be used to determine how an element will be
+        positioned, and it accepts five (main) values:
+      </p>
+      <ul>
+        <li>Static (default)</li>
+        <li>Relative</li>
+        <li>Absolute</li>
+        <li>Fixed</li>
+        <li>Sticky</li>
+      </ul>
+      <p>
+        (There's also some other values it accepts, but I'll focus on these for
+        now. I'll also skip sticky.)
+      </p>
+      <p>
+        <span style="font-weight: bold">Static</span> is the default state - you
+        can't really move the element around, and it'll sit wherever you've
+        placed it in your HTML code's flow.
+      </p>
+      <p>
+        <span style="font-weight: bold">Relative</span>, much like static, sits
+        in the normal flow of the document. This means wherever you place it in
+        the HTML, it will always keep its original spot. Take a look at the code
+        below:
+      </p>
+      <img src="../images/relative-1.png" />
+      <p>
+        As you can see, it sits nicely between the text above and below it, as
+        per the flow of the code.
+      </p>
+      <p>
+        We can also move our relative element with the top, left, right, and
+        bottom properties. For now, lets just move it 100px away from the top.
+      </p>
+      <img src="../images/relative-2.png" />
+      <p>
+        Note: These properties will not work with static elements (give it a
+        try!) but can also be used on absolute and fixed elements.
+      </p>
+      <p>
+        In this image, notice that it moves 100px away from its
+        <span style="text-decoration: underline">original position</span>;
+      </p>
+      <p>
+        <span style="font-weight: bold">Absolute</span> elements differ from
+        relative, in that it is:
+      </p>
+
+      <ol>
+        <li>Removed from the flow of the page</li>
+        <li>Moves relative to the nearest positioned ancestor.</li>
+      </ol>
+      <p>
+        'Removed from the flow of the page' just means when we move it around,
+        its original spot isn't saved. From the relative example above, you can
+        see that the space the element originally was has a blank space. This is
+        because it still holds onto its original flow in the page.
+      </p>
+      <p>Take a look at the code below:</p>
+      <img src="../images/absolute-1.png" />
+      <p>
+        We have an absolute element inside of a static one. Lets move the
+        absolute element.
+      </p>
+      <img src="../images/absolute-2.png" />
+      <p>
+        Setting top:0 and left:0 means it should stick to the top left corner of
+        whatever it's moving in relation to. In this image, since the parent div
+        is static (i.e is not positioned) it defaults to the body. Let's give
+        the parent element a position of relative.
+      </p>
+      <img src="../images/absolute-3.png" />
+      <p>Now it sticks to the top-left of the element!</p>
+      <p>
+        <span style="font-weight: bold">Fixed</span> means the element is
+        removed from the flow of the page (like absolute) and moves in relation
+        to the viewport. For example, a navigation at the top of the screen of a
+        website that follows down when you scroll can be done using the fixed
+        position.
+      </p>
+      <p>TLDR;
+        <ul>
+          <li><span style="font-weight:bold">Static</span> is the default position of elements, and cannot be moved using top, left, right, and bottom properties.</li>
+          <li><span style="font-weight:bold">Relative</span> elements move in relation to its <span style="font-weight:bold">original placement</span> on the page. It stays in the flow.</li>
+          <li><span style="font-weight:bold">Absolute</span> elements are removed from the flow, and move in relation to its <span style="font-weight:bold">closest positioned ancestor</span>.</li>
+          <li><span style="font-weight:bold">Fixed</span> elements are also removed from the flow, and move in relation to the <span style="font-weight:bold">viewport</span>.</li>
+        </ul>
+      </p>
     </div>
   </body>
 </html>
