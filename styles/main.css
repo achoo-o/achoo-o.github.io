@@ -22,27 +22,20 @@ body {
 **************************/
 
 #nav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
   height: 10vh;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
   background-color: rgb(245, 245, 245);
   box-shadow: 0 2px 10px var(--light-grey);
+}
+
+#nav a {
+  text-align: center;
+  margin: 0 10px;
+  padding: 20px;
   color: var(--p-color);
-}
-
-#nav ul {
-  /* Styles list */
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  width: 70%;
-}
-
-#nav li {
-  /* Displays list horizontally */
-  display: inline;
+  justify-content: center;
 }
 
 /*************************
@@ -132,6 +125,10 @@ img {
 
 /* For Desktop */
 @media only screen and (min-width: 940px) {
+  #nav {
+    padding-right: 20vw;
+  }
+
   /*****   COLUMNS   *****/
   .column,
   .one-third,
