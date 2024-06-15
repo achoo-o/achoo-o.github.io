@@ -45,9 +45,9 @@ body {
 /*Wraps all content inside body*/
 #content-wrapper {
   border-radius: 16px;
-
+  font-family: 'Inter', sans-serif;
+  font-weight: 450;
   line-height: 2.4em;
-
   padding: 5vh 6vw;
   margin: 0 10vw;
 }
