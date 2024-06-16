@@ -106,7 +106,6 @@ img {
   margin: 10px 0;
   padding: 30px;
   height: 350px;
-  background-color: rgb(122, 149, 166);
   border-radius: 5px;
   text-align: center;
   overflow: hidden;
@@ -120,21 +119,6 @@ img {
   vertical-align: middle;
   height: 200px;
   box-shadow: none;
-}
-
-.post {
-  margin: 10px 0;
-  padding: 3px 20px;
-  height: 250px;
-  background-color: rgb(122, 149, 166);
-  border-radius: 5px;
-  overflow: hidden;
-  word-wrap: break-word;
-  line-height: normal;
-}
-
-.post h4 {
-  color: var(--h4-color, black);
 }
 
 /* For Desktop */
@@ -172,9 +156,9 @@ img {
   }
 
   .project {
-    margin: 10px;
+    box-sizing: border-box;
     padding: 20px 30px;
-    background-color: rgb(122, 149, 166);
+    background-color: rgba(62, 67, 75, 0.1);
     border-radius: 5px;
     line-height: normal;
     font-size: 10px;
@@ -184,15 +168,6 @@ img {
     min-width: 90%;
     padding-bottom: 1em;
   }
-
-  .post {
-    margin: 0 0.8em;
-    padding: 30px 20px;
-    height: 250px;
-    background-color: rgb(122, 149, 166);
-    border-radius: 5px;
-  }
-}
 
 /*****   SHAPES & SPACERS  *****/
 .line {
