@@ -55,7 +55,7 @@ nav a:hover {
 
 h1 {
   color: var(--h1-color);
-  margin: 5px;
+  margin: 5px 5px 15px 5px;
   text-align: left;
 }
 
@@ -85,7 +85,7 @@ a {
 img {
   margin: 15px 0;
   max-width: 100%;
-  box-shadow: 0 2px 10px var(--light-grey);
+  box-shadow: 0 2px 10px rgba(62, 67, 75, 0.1);
 }
 
 /*Wraps all content inside body*/
@@ -99,65 +99,48 @@ img {
 }
 
 /*  For Mobile */
-/*.column {
-}*/
-
-.project {
-  margin: 10px 0;
-  padding: 30px;
-  height: 350px;
-  border-radius: 5px;
-  text-align: center;
-  overflow: hidden;
-  word-wrap: break-word; /* Truncates project text */
-  line-height: 1.8em;
-}
-
-.project-thumbnail {
-  padding-bottom: 1em;
-  display: inline-block;
-  vertical-align: middle;
-  height: 200px;
-  box-shadow: none;
-}
 
 /* For Desktop */
 @media only screen and (min-width: 940px) {
   #nav {
     padding-right: 20vw;
   }
+  
+  .about-container {
+    display: flex;
+    align-items: stretch;
+  }
 
-  /*****   COLUMNS   *****/
-  .column,
-  .one-third,
-  .two-thirds {
+  .about-text {
+    margin-right: 100px;
+    flex-shrink: 1.4;
+  }
+
+  .about-image {
+  }
+
+  /*****   Project Preview   *****/
+
+  .project-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .project-container div {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  .project-container img {
     margin: 0;
   }
 
-  .column {
-    box-sizing: border-box; /* Tells browser to include border & padding in width */
-    margin: 0;
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 15px;
-  }
-
-  .one-third {
-    margin: 0;
-    padding: 0;
-    width: 32%;
-    max-width: 33%;
-    text-align: center;
-  }
-
-  .two-thirds {
-    width: 66%;
-    max-width: 66%;
+  .project-container p {
+    margin: 20px;
   }
 
   .project {
-    box-sizing: border-box;
-    padding: 20px 30px;
     background-color: rgba(62, 67, 75, 0.1);
     border-radius: 5px;
     line-height: normal;
@@ -165,8 +148,6 @@ img {
   }
 
   .project-thumbnail {
-    min-width: 90%;
-    padding-bottom: 1em;
   }
 
 /*****   SHAPES & SPACERS  *****/
