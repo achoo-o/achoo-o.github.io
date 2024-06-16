@@ -100,8 +100,69 @@ img {
 
 /*  For Mobile */
 
+/*  For Tablet */
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 17px;
+  }
+
+  #nav {
+    padding-right: 20vw;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .about-text {
+    margin-right: 100px;
+    flex-shrink: 1.4;
+  }
+
+  .about-image {
+  }
+
+  /*****   Project Preview   *****/
+
+  .project-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .project-container div {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  .project-container img {
+    margin: 0;
+  }
+
+  .project-container p {
+    margin: 20px;
+  }
+
+  .project {
+    background-color: rgba(62, 67, 75, 0.1);
+    border-radius: 5px;
+    line-height: normal;
+    font-size: 10px;
+  }
+
+  .project-thumbnail {
+  }
+}
+
 /* For Desktop */
-@media only screen and (min-width: 940px) {
+@media only screen and (min-width: 992px) {
+
+  p {
+    font-size: 20px;
+  }
+
   #nav {
     padding-right: 20vw;
   }
