@@ -23,8 +23,9 @@ body {
 **************************/
 
 nav {
+  padding-left: 8vw;
   display: flex;
-  justify-content: right;
+  justify-content: left;
   align-items: center;
   font-family: 'Inter', sans-serif;
   background-color: rgb(245, 245, 245);
