@@ -254,6 +254,7 @@ strong {
   }
 
   .post-container {
+    margin-bottom: 5em;
     display: flex;
     justify-content: center;
     flex-direction: row;
