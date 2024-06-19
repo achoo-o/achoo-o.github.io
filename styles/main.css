@@ -249,8 +249,10 @@ strong {
     line-height: normal;
   }
 
-  .post p {
+  .post h5 {
+    margin: 1em 1.5em;
     font-size: 17px;
+    color: var(--h4-color);
   }
 
   .post-container {
@@ -263,12 +265,6 @@ strong {
   .post-container div {
     margin-left: 18px;
     margin-right: 18px;
-  }
-
-  .post h3 {
-    margin: 1em 18px;
-    color: var(--h4-color);
-    font-size: 22px;
   }
 
   .post-container img {
