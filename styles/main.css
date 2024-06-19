@@ -212,6 +212,13 @@ strong {
 
   /*****   Project Preview   *****/
 
+  .project {
+    background-color: rgba(62, 67, 75, 0.1);
+    border-radius: 5px;
+    line-height: normal;
+    font-size: 10px;
+  }
+
   .project-container {
     display: flex;
     justify-content: center;
@@ -231,14 +238,47 @@ strong {
     margin: 20px;
   }
 
-  .project {
+  .project-thumbnail {
+  }
+
+  /*****   Post Preview   *****/
+
+  .post {
     background-color: rgba(62, 67, 75, 0.1);
     border-radius: 5px;
     line-height: normal;
-    font-size: 10px;
   }
 
-  .project-thumbnail {
+  .post p {
+    font-size: 17px;
+  }
+
+  .post-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .post-container div {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  .post h3 {
+    margin: 1em 18px;
+    color: var(--h4-color);
+    font-size: 22px;
+  }
+
+  .post-container img {
+    margin: 0;
+  }
+
+  .post-container p {
+    margin: 20px;
+  }
+
+  .post-thumbnail {
   }
 
 /*****   SHAPES & SPACERS  *****/
