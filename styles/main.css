@@ -187,6 +187,7 @@ strong {
   }
 
   code {
+    margin: 45px 0;
     overflow-wrap: break-word;
     width: 50%;
   }
