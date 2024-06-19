@@ -244,16 +244,10 @@ strong {
   /*****   Post Preview   *****/
 
   .post {
-    background-color: rgba(62, 67, 75, 0.1);
+    background-color: rgba(72, 131, 226, 0.5);
     border-radius: 5px;
     line-height: normal;
     flex: 1;
-  }
-
-  .post h5 {
-    margin: 1em 1.5em;
-    font-size: 20px;
-    color: var(--p-color);
   }
 
   .post-container {
@@ -266,6 +260,24 @@ strong {
   .post-container div {
     margin-left: 18px;
     margin-right: 18px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .post h5 {
+    margin: 1em 1.5em;
+    font-size: 20px;
+    color: var(--light-grey);
+    line-height: 1.5em;
+    text-align: center;
+  }
+
+  .post h5:hover {
+    color: var(--accent);
+    transition-duration: 0.5s;
+  }
+
+  .post a {
+    text-decoration: none;
   }
 
   .post-container img {
