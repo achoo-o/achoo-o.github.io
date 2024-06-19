@@ -247,6 +247,7 @@ strong {
     background-color: rgba(62, 67, 75, 0.1);
     border-radius: 5px;
     line-height: normal;
+    flex: 1;
   }
 
   .post h5 {
