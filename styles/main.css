@@ -253,11 +253,25 @@ strong {
   }
 
   /*****   Post Preview   *****/
+  
+  .post-container {
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .post-container div {
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+  }
 
   .post {
+    position: relative;
     transition-duration: 0.3s;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 2px;
     line-height: normal;
     flex: 1;
   }
@@ -272,25 +286,8 @@ strong {
     filter:brightness(90%);
   }
 
-  .post-thumbnail {
-    transition-duration: 0.9s;
-  }
-
-  .post-container {
-    margin-bottom: 5em;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-
-  .post-container div {
-    margin-left: 18px;
-    margin-right: 18px;
-    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
-  }
-
   .post h5 {
-    margin: 1em 1.4em;
+    margin: 0.5em 1.4em 2.4em 1.4em;
     font-size: 18px;
     color: var(--dark);
     line-height: 1.5em;
@@ -301,20 +298,21 @@ strong {
     transition-duration: 0.5s;
   }
 
+  .post p {
+    margin: 0 0 1em 2em;
+    position: absolute;
+    font-size: 12px;
+    bottom: 0;
+  }
+
   .post a {
     text-decoration: none;
     flex: 1;
   }
 
-  .post-container img {
-    margin: 0;
-  }
-
-  .post-container p {
-    margin: 20px;
-  }
-
   .post-thumbnail {
+    margin: 0;
+    transition-duration: 0.9s;
   }
 
 /*****   SHAPES & SPACERS  *****/
