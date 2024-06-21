@@ -9,6 +9,8 @@ html {
   --h4-color: rgb(228, 228, 228);
   --p-color: rgb(179, 179, 179);
   --special-color: rgb(155, 155, 155);
+  /* Post & Project */
+  --post-bg: white;
   /* Sizing */
   --spacer-height: 70px;
   /* HTML Styling*/
@@ -270,9 +272,9 @@ strong {
   .post {
     position: relative;
     transition-duration: 0.3s;
-    background-color: white;
+    background-color: var(--post-bg);
     border-radius: 2px;
-    line-height: normal;
+    line-height: 1.4em;
     flex: 1;
   }
 
@@ -281,16 +283,10 @@ strong {
     transition-duration: 0.3s;
   }
 
-  .post:hover .post-thumbnail {
-    transition-duration: 0.3s;
-    filter:brightness(90%);
-  }
-
   .post h5 {
-    margin: 0.5em 1.4em 2.4em 1.4em;
+    margin: 0.5em 0.8em 2.4em 0.8em;
     font-size: 18px;
     color: var(--dark);
-    line-height: 1.5em;
   }
 
   .post h5:hover {
@@ -299,7 +295,7 @@ strong {
   }
 
   .post p {
-    margin: 0 0 1em 2em;
+    margin: 0 0 1em 1em;
     position: absolute;
     font-size: 12px;
     bottom: 0;
@@ -311,8 +307,11 @@ strong {
   }
 
   .post-thumbnail {
+    box-sizing: border-box;
     margin: 0;
-    transition-duration: 0.9s;
+    border-left: 0.8em var(--post-bg) solid;
+    border-right: 0.8em var(--post-bg) solid;
+    border-top: 0.8em var(--post-bg) solid;
   }
 
 /*****   SHAPES & SPACERS  *****/
