@@ -255,10 +255,25 @@ strong {
   /*****   Post Preview   *****/
 
   .post {
-    background-color: rgba(72, 131, 226, 0.5);
+    transition-duration: 0.3s;
+    background-color: white;
     border-radius: 5px;
     line-height: normal;
     flex: 1;
+  }
+
+  .post:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+  }
+
+  .post:hover .post-thumbnail {
+    transition-duration: 0.3s;
+    filter:brightness(90%);
+  }
+
+  .post-thumbnail {
+    transition-duration: 0.9s;
   }
 
   .post-container {
@@ -275,11 +290,10 @@ strong {
   }
 
   .post h5 {
-    margin: 1em 1.5em;
-    font-size: 20px;
-    color: var(--light-grey);
+    margin: 1em 1.4em;
+    font-size: 18px;
+    color: var(--dark);
     line-height: 1.5em;
-    text-align: center;
   }
 
   .post h5:hover {
@@ -289,6 +303,7 @@ strong {
 
   .post a {
     text-decoration: none;
+    flex: 1;
   }
 
   .post-container img {
