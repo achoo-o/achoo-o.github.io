@@ -128,6 +128,63 @@ strong {
 
 /*  For Mobile */
 
+  /*****   Post Preview   *****/
+  
+  .post-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .post-container div {
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .post {
+    margin-bottom: 2em;
+    position: relative;
+    transition-duration: 0.3s;
+    background-color: var(--post-bg);
+    border-radius: 2px;
+    line-height: 1.4em;
+  }
+
+  .post:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+  }
+
+  .post h5 {
+    margin: 0.5em 0.8em 0.8em 0.8em;
+    font-size: 14px;
+    color: var(--dark);
+  }
+
+  .post h5:hover {
+    color: var(--accent);
+    transition-duration: 0.5s;
+  }
+
+  .post p {
+    text-align: center;
+    font-size: 12px;
+    bottom: 0;
+  }
+
+  .post a {
+    text-decoration: none;
+    flex: 1;
+  }
+
+  .post-thumbnail {
+    box-sizing: border-box;
+    margin: 0;
+    border-left: 0.8em var(--post-bg) solid;
+    border-right: 0.8em var(--post-bg) solid;
+    border-top: 0.8em var(--post-bg) solid;
+  }
+
 /*  For Tablet */
 @media only screen and (min-width: 768px) {
   p {
@@ -257,61 +314,14 @@ strong {
   /*****   Post Preview   *****/
   
   .post-container {
-    margin-bottom: 5em;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-
-  .post-container div {
-    margin-left: 15px;
-    margin-right: 15px;
-    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
-  }
-
-  .post {
-    position: relative;
-    transition-duration: 0.3s;
-    background-color: var(--post-bg);
-    border-radius: 2px;
-    line-height: 1.4em;
-    flex: 1;
-  }
-
-  .post:hover {
-    transform: scale(1.05);
-    transition-duration: 0.3s;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 4em;
   }
 
   .post h5 {
-    margin: 0.5em 0.8em 2.4em 0.8em;
     font-size: 18px;
-    color: var(--dark);
-  }
-
-  .post h5:hover {
-    color: var(--accent);
-    transition-duration: 0.5s;
-  }
-
-  .post p {
-    margin: 0 0 1em 1em;
-    position: absolute;
-    font-size: 12px;
-    bottom: 0;
-  }
-
-  .post a {
-    text-decoration: none;
-    flex: 1;
-  }
-
-  .post-thumbnail {
-    box-sizing: border-box;
-    margin: 0;
-    border-left: 0.8em var(--post-bg) solid;
-    border-right: 0.8em var(--post-bg) solid;
-    border-top: 0.8em var(--post-bg) solid;
+    margin-top: 1em;
   }
 
 /*****   SHAPES & SPACERS  *****/
