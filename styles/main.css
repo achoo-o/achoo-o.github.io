@@ -97,6 +97,27 @@ img {
   max-width: 100%;
 }
 
+table {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  table-layout:fixed;
+  text-align: left;
+  color: var(--p-color);
+  border-collapse: collapse;
+}
+
+th {
+  color: white;
+  padding: 8px 15px;
+  border-bottom: 2px var(--p-color) solid;
+}
+
+td {
+  border-bottom: 2px rgba(255, 255, 255, 0.1) solid;
+  width: 2%;
+  padding: 8px 15px;
+}
+
 code {
   font-size: 18px;
   border: 1px var(--p-color) solid;
