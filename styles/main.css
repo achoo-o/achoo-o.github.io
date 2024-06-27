@@ -10,7 +10,7 @@ html {
   --p-color: rgb(179, 179, 179);
   --special-color: rgb(155, 155, 155);
   /* Post & Project */
-  --post-bg: white;
+  --post-bg: rgb(35, 49, 68);
   /* Sizing */
   --spacer-height: 70px;
   /* HTML Styling*/
@@ -155,8 +155,9 @@ strong {
   .post-container {
     display: flex;
     justify-content: center;
-    text-align: center;
-    flex-direction: column;
+    text-align: left;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .post-container div {
@@ -165,11 +166,11 @@ strong {
 
   .post {
     margin-bottom: 2em;
-    position: relative;
     transition-duration: 0.3s;
     background-color: var(--post-bg);
     border-radius: 2px;
     line-height: 1.4em;
+    border: 1px solid rgb(66, 65, 85);
   }
 
   .post:hover {
@@ -179,24 +180,23 @@ strong {
 
   .post h5 {
     margin: 0.5em 0.8em 0.8em 0.8em;
-    font-size: 14px;
-    color: var(--dark);
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: underline;
+    color: var(--light-grey);
   }
 
   .post h5:hover {
-    color: var(--accent);
+    color: rgb(180, 177, 202);
     transition-duration: 0.5s;
   }
 
   .post p {
-    text-align: center;
+    color: rgb(179, 179, 179);
+    margin-left: 1em;
+    text-align: left;
     font-size: 12px;
     bottom: 0;
-  }
-
-  .post a {
-    text-decoration: none;
-    flex: 1;
   }
 
   .post-thumbnail {
@@ -336,14 +336,24 @@ strong {
   /*****   Post Preview   *****/
   
   .post-container {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 3em;
+    margin-right: 3em;
     margin-top: 4em;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .post-container div {
+    max-width: 22%;
   }
 
   .post h5 {
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 1em;
+  }
+
+  .post a {
+    text-decoration: none;
   }
 
 /*****   SHAPES & SPACERS  *****/
