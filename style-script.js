@@ -1,8 +1,6 @@
 const h2 = document.querySelectorAll('h2')
 const h3 = document.querySelectorAll('h3')
 const h4 = document.querySelectorAll('h4')
-const line = document.createElement('div')
-line.className = 'line'
 
 window.onload = addLines();
 
