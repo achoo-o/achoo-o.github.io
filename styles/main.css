@@ -81,7 +81,7 @@ h2:hover, h3:hover, h4:hover  {
 p,
 li {
   color: var(--p-color);
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
 }
 
@@ -290,7 +290,7 @@ strong {
   }
 
   p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   code {
@@ -301,7 +301,8 @@ strong {
 
   #content-wrapper {
     margin: 3vw 13vw;
-    padding-top: 7em;
+    padding-top: 6em;
+    padding-bottom: 6em;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
     border: 1px rgba(255, 255, 255, 0.1) solid;
   }
