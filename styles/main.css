@@ -150,6 +150,24 @@ strong {
 
 /*  For Mobile */
 
+.date, .author, .separator {
+  margin-right: 5px;
+  display: inline;
+  color: grey;
+  font-size: 14px;
+}
+
+.author a {
+  color: grey;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+.author a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
   /*****   Post Preview   *****/
   
   .post-container {
