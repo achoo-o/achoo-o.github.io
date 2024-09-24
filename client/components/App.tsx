@@ -4,7 +4,7 @@ import Header from "./Header";
 
 export default function App() {
   return (
-    <div className="bg-black font-poppins">
+    <div>
       <Header />
       <Outlet />
     </div>
