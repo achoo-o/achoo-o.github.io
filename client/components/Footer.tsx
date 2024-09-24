@@ -7,11 +7,11 @@ export default function Footer() {
     {name: 'Projects', link: '/projects'},
   ]
   return (
-    <section>
-      <ul>
+    <section className="flex justify-center">
+      <ul className="flex flex-row absolute bottom-0 gap-16 my-10">
         {nav.map((item, i) => {
           return (
-          <li key={i}>
+          <li key={i} className="hover:text-blue-300">
             <Link to={item.link}>
               {item.name}
             </Link>
