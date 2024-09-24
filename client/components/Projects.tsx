@@ -16,7 +16,7 @@ export default function Projects() {
     },
     {
       name: 'My \'First\' Project', 
-      description: 'A simple rock, paper, scissors project made as part of The Odin Project.', 
+      description: 'A simple rock, paper, scissors project made as part of The Odin Project. One of the very first games I managed to deploy.', 
       link: 'https://achoo-o.github.io/paper-scissors-rock/paperScissorsRock.html',
       thumbnail: 'rockpaperscissors.png',
       alt: ''
@@ -24,23 +24,23 @@ export default function Projects() {
   ]
   //https://flowbite.com/docs/components/card/
   return (
-    <div className="flex flex-col h-screen justify-center items-center p-4 text-center">
+    <div className="flex flex-col h-screen justify-center items-center p-4">
       <div className="flex flex-row gap-10">
       {projects.map((project) => {
         const {name, description, link, thumbnail, alt} = project
         return(
-          <section key={name} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+          <section key={name} className="max-w-sm bg-blue-500 bg-opacity-5 border-2 border-gray-900 rounded-lg shadow-lg">
             <a href={link}>
-                <img className="rounded-t-lg  object-cover max-h-56 w-full" src={`images/${thumbnail}`} alt={alt} />
+                <img className="rounded-t-lg  object-cover max-h-60 w-full" src={`images/${thumbnail}`} alt={alt} />
             </a>
             <div className="p-5">
                 <a href={link}>
-                    <h1 className="mb-2 text-2xl font-bold tracking-tight text-black">{name}</h1>
+                    <h1 className="mb-2 text-2xl font-bold tracking-tight text-white">{name}</h1>
                 </a>
-                <p className="mb-3 font-normal text-gray-800">
+                <p className="mb-3 font-normal text-gray-300">
                   {description}
                 </p>
-                <a href={link} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-400 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <a href={link} className="inline-flex items-center mt-3 px-3 py-2 text-sm font-semibold text-center text-white bg-orange-400 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                     View Project
                     <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
