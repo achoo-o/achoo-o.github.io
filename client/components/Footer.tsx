@@ -11,7 +11,7 @@ export default function Footer() {
       <ul className="flex flex-row absolute bottom-0 gap-16 my-10">
         {nav.map((item, i) => {
           return (
-          <li key={i} className="hover:text-blue-300">
+          <li key={i} className="hover:text-blue-200">
             <Link to={item.link}>
               {item.name}
             </Link>
