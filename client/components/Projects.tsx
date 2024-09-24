@@ -24,11 +24,12 @@ export default function Projects() {
   ]
   //https://flowbite.com/docs/components/card/
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+    <div>
+      <div className="flex flex-row gap-10">
       {projects.map((project) => {
         const {name, description, link, thumbnail, alt} = project
         return(
-          <section key={name}>
+          <section key={name} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
             <a href={link}>
                 <img className="rounded-t-lg  object-cover max-h-56 w-full" src={`images/${thumbnail}`} alt={alt} />
             </a>
@@ -49,6 +50,12 @@ export default function Projects() {
         </section>
         )
       })}
+      </div>
+      {/* <div className="text-center">
+        <div className="w-4 h-4 rounded-full bg-gray-700"></div>
+        <div className="w-4 h-4 rounded-full bg-gray-700"></div>
+        <div className="w-4 h-4 rounded-full bg-gray-700"></div>
+      </div> */}
     </div>
   )
 }
