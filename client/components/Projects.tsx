@@ -1,3 +1,6 @@
+import { useState } from "react"
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs"
+
 export default function Projects() {
   const projects = [
     {
@@ -16,46 +19,66 @@ export default function Projects() {
     },
     {
       name: 'My \'First\' Project', 
-      description: 'A simple rock, paper, scissors project made as part of The Odin Project.', 
+      description: 'A simple rock, paper, scissors project made as part of The Odin Project. One of the very first games I managed to deploy.', 
       link: 'https://achoo-o.github.io/paper-scissors-rock/paperScissorsRock.html',
       thumbnail: 'rockpaperscissors.png',
       alt: ''
       },
   ]
+
+  const [ slide, setSlide ] = useState(0)
+
+  function handleClick(dir: string): void {
+    const max = 2
+
+    switch(dir) {
+      case'left':
+        slide === 0 ? setSlide(max) : setSlide(slide - 1)
+        break;
+      case 'right':
+        slide === max ? setSlide(0) : setSlide(slide + 1)
+    }
+  }
+
   //https://flowbite.com/docs/components/card/
   return (
-    <div className="flex flex-col h-screen justify-center items-center p-4 text-center">
+    <div className="transition-all flex flex-col h-screen justify-center items-center p-4">
       <div className="flex flex-row gap-10">
-      {projects.map((project) => {
+      {projects.map((project, i) => {
         const {name, description, link, thumbnail, alt} = project
+        const hidden = slide === i ? 'flex' : 'hidden'
         return(
-          <section key={name} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-            <a href={link}>
-                <img className="rounded-t-lg  object-cover max-h-56 w-full" src={`images/${thumbnail}`} alt={alt} />
-            </a>
-            <div className="p-5">
-                <a href={link}>
-                    <h1 className="mb-2 text-2xl font-bold tracking-tight text-black">{name}</h1>
-                </a>
-                <p className="mb-3 font-normal text-gray-800">
-                  {description}
-                </p>
-                <a href={link} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-400 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    View Project
-                    <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
-                </a>
-            </div>
-        </section>
+          <div key={name} className={`${hidden} flex-row items-center mt-20`}>
+            <BsArrowLeftCircleFill className="abolute left-0 mr-7 w-12 h-12 shrink-0 text-white" onClick={() => handleClick('left')}/>
+            <section  className="max-w-xl bg-blue-500 bg-opacity-5 border-2 border-gray-900 rounded-lg shadow-lg">
+              <a href={link}>
+                  <img className="transition-all rounded-t-lg  object-cover max-h-96 min-h-96 w-full" src={`images/${thumbnail}`} alt={alt} />
+              </a>
+              <div className="p-5">
+                  <a href={link}>
+                      <h1 className="mb-2 text-2xl font-bold tracking-tight text-white">{name}</h1>
+                  </a>
+                  <p className="mb-3 font-normal text-gray-300">
+                    {description}
+                  </p>
+                  <a href={link} className="inline-flex items-center mt-3 px-3 py-2 text-sm font-semibold text-center text-white bg-orange-400 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      View Project
+                      <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                      </svg>
+                  </a>
+              </div>
+            </section>
+            <BsArrowRightCircleFill className="abolute right-0 ml-7 w-12 h-12 shrink-0 text-white" onClick={() => handleClick('right')}/>
+          </div>
         )
       })}
       </div>
-      {/* <div className="text-center">
-        <div className="w-4 h-4 rounded-full bg-gray-700"></div>
-        <div className="w-4 h-4 rounded-full bg-gray-700"></div>
-        <div className="w-4 h-4 rounded-full bg-gray-700"></div>
-      </div> */}
+      <div className="flex flex-row gap-2 mt-10 text-center">
+        <button onClick={() => setSlide(0)} tabIndex={0} className={`transition-all w-4 h-4 rounded-full ${slide === 0 ? 'bg-gray-200' : 'bg-gray-700'}`}></button>
+        <button onClick={() => setSlide(1)} tabIndex={0} className={`transition-all w-4 h-4 rounded-full ${slide === 1 ? 'bg-gray-200' : 'bg-gray-700'}`}></button>
+        <button onClick={() => setSlide(2)} tabIndex={0} className={`transition-all w-4 h-4 rounded-full ${slide === 2 ? 'bg-gray-200' : 'bg-gray-700'}`}></button>
+      </div>
     </div>
   )
 }
