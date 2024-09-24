@@ -11,7 +11,7 @@ export default function Header() {
       <ul className="flex flex-row absolute top-0 gap-16 my-10">
         {nav.map((item, i) => {
           return (
-          <li key={i} className="hover:text-blue-200">
+          <li key={i} className="text-gray-300 hover:text-blue-200">
             <Link to={item.link}>
               {item.name}
             </Link>
