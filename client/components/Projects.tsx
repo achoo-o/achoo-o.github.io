@@ -49,7 +49,7 @@ export default function Projects() {
         const hidden = slide === i ? 'flex' : 'hidden'
         return(
           <div key={name} className={`${hidden} flex-row items-center mt-20`}>
-            <BsArrowLeftCircleFill className="abolute left-0 mr-7 w-12 h-12 shrink-0 text-gray-200" onClick={() => handleClick('left')}/>
+            <BsArrowLeftCircleFill className="left-0 mr-7 w-12 h-12 shrink-0 text-gray-200" onClick={() => handleClick('left')}/>
             <section  className="max-w-lg bg-blue-500 bg-opacity-5 border-2 border-gray-900 rounded-lg shadow-lg">
               <a href={link}>
                   <img 
@@ -72,7 +72,7 @@ export default function Projects() {
                   </a>
               </div>
             </section>
-            <BsArrowRightCircleFill className="abolute right-0 ml-7 w-12 h-12 shrink-0 text-gray-200" onClick={() => handleClick('right')}/>
+            <BsArrowRightCircleFill className="right-0 ml-7 w-12 h-12 shrink-0 text-gray-200" onClick={() => handleClick('right')}/>
           </div>
         )
       })}
