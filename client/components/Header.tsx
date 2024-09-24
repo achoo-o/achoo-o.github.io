@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Footer() {
+export default function Header() {
   const nav = [
     {name: 'Home', link: '/'},
     {name: 'About', link: '/about'},
@@ -8,7 +8,7 @@ export default function Footer() {
   ]
   return (
     <section className="flex justify-center">
-      <ul className="flex flex-row absolute bottom-0 gap-16 my-10">
+      <ul className="flex flex-row absolute top-0 gap-16 my-10">
         {nav.map((item, i) => {
           return (
           <li key={i} className="hover:text-blue-200">
