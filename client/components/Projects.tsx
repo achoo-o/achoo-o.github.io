@@ -49,10 +49,13 @@ export default function Projects() {
         const hidden = slide === i ? 'flex' : 'hidden'
         return(
           <div key={name} className={`${hidden} flex-row items-center mt-20`}>
-            <BsArrowLeftCircleFill className="abolute left-0 mr-7 w-12 h-12 shrink-0 text-white" onClick={() => handleClick('left')}/>
-            <section  className="max-w-xl bg-blue-500 bg-opacity-5 border-2 border-gray-900 rounded-lg shadow-lg">
+            <BsArrowLeftCircleFill className="abolute left-0 mr-7 w-12 h-12 shrink-0 text-gray-200" onClick={() => handleClick('left')}/>
+            <section  className="max-w-lg bg-blue-500 bg-opacity-5 border-2 border-gray-900 rounded-lg shadow-lg">
               <a href={link}>
-                  <img className="transition-all rounded-t-lg  object-cover max-h-96 min-h-96 w-full" src={`images/${thumbnail}`} alt={alt} />
+                  <img 
+                  className="transition-all rounded-t-lg  object-cover max-h-96 min-h-96 w-full" 
+                  src={`images/${thumbnail}`} 
+                  alt={alt} />
               </a>
               <div className="p-5">
                   <a href={link}>
@@ -69,7 +72,7 @@ export default function Projects() {
                   </a>
               </div>
             </section>
-            <BsArrowRightCircleFill className="abolute right-0 ml-7 w-12 h-12 shrink-0 text-white" onClick={() => handleClick('right')}/>
+            <BsArrowRightCircleFill className="abolute right-0 ml-7 w-12 h-12 shrink-0 text-gray-200" onClick={() => handleClick('right')}/>
           </div>
         )
       })}
