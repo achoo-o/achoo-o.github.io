@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 html {
-  background: #1C2220;
   font-family: 'Poppins', sans-serif;
 }
 

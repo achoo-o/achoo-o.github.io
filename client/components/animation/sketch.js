@@ -18,13 +18,13 @@ function setup() {
 
 function draw() {
   background(14, 18, 17);
-  shape(width/2, height/2)
-  shape(width/2, height/2)
+  shape(-100, -100)
+  shape(width + 100, height + 100)
 }
 
 function shape(x, y) {
   translate(x, y);
-  stroke(92, 97, 95);
+  stroke(48, 48, 48);
   noFill();
   beginShape();
   for (let a = 0; a < TWO_PI; a += 0.001) {
