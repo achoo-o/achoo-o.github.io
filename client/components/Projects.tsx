@@ -42,13 +42,13 @@ export default function Projects() {
 
   //https://flowbite.com/docs/components/card/
   return (
-    <div className="transition-all flex flex-col h-screen justify-center items-center p-4">
+    <div className="transition-all flex flex-col justify-center items-center p-4">
       <div className="flex flex-row gap-10">
       {projects.map((project, i) => {
         const {name, description, link, thumbnail, alt} = project
         const hidden = slide === i ? 'flex' : 'hidden'
         return(
-          <div key={name} className={`${hidden} flex-row items-center mt-20`}>
+          <div key={name} className={`${hidden} flex-row items-center mt-20 min-w-144`}>
             <BsArrowLeftCircleFill className="left-0 mr-7 w-12 h-12 shrink-0 text-gray-200" onClick={() => handleClick('left')}/>
             <section  className="max-w-lg bg-blue-500 bg-opacity-5 border-2 border-gray-900 rounded-lg shadow-lg">
               <a href={link}>
