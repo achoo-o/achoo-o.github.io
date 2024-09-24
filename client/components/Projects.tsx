@@ -24,7 +24,7 @@ export default function Projects() {
   ]
   //https://flowbite.com/docs/components/card/
   return (
-    <div>
+    <div className="flex flex-col h-screen justify-center items-center p-4 text-center">
       <div className="flex flex-row gap-10">
       {projects.map((project) => {
         const {name, description, link, thumbnail, alt} = project
