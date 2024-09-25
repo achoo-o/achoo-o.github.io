@@ -49,7 +49,7 @@ export default function Projects() {
         const hidden = slide === i ? 'flex' : 'hidden'
         return(
           <div key={name} className={`${hidden} flex-row items-center mt-20 min-w-144`}>
-            <BsArrowLeftCircleFill className="left-0 mr-7 w-12 h-12 shrink-0 text-gray-200" onClick={() => handleClick('left')}/>
+            <BsArrowLeftCircleFill className="left-0 mr-7 w-12 h-12 shrink-0 text-gray-200 hover:cursor-pointer" onClick={() => handleClick('left')}/>
             <section  className="max-w-lg bg-blue-500 bg-opacity-5 border-2 border-gray-900 rounded-lg shadow-lg">
               <a href={link}>
                   <img 
@@ -64,7 +64,10 @@ export default function Projects() {
                   <p className="mb-3 font-normal text-gray-300">
                     {description}
                   </p>
-                  <a href={link} target="_blank" rel="noreferrer" className="inline-flex items-center mt-3 px-3 py-2 text-sm font-semibold text-center text-white bg-orange-400 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  <a href={link} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="inline-flex items-center mt-3 px-3 py-2 text-sm font-semibold text-center text-white bg-orange-400 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                       View Project
                       <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -72,7 +75,7 @@ export default function Projects() {
                   </a>
               </div>
             </section>
-            <BsArrowRightCircleFill className="right-0 ml-7 w-12 h-12 shrink-0 text-gray-200" onClick={() => handleClick('right')}/>
+            <BsArrowRightCircleFill className="right-0 ml-7 w-12 h-12 shrink-0 text-gray-200 hover:cursor-pointer" onClick={() => handleClick('right')}/>
           </div>
         )
       })}
