@@ -24,7 +24,7 @@ function draw() {
 
 function shape(x, y) {
   translate(x, y)
-  stroke(255)
+  stroke(210)
   noFill()
   beginShape()
   for (let a = 0; a < TWO_PI; a += 0.001) {
