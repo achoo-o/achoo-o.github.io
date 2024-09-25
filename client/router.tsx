@@ -6,9 +6,9 @@ import Projects from './components/Projects'
 
 export const routes = createRoutesFromElements(
   <Route path="/" element={<App />}>
-    <Route index element={<Home />} />
-    <Route path="about" element={<About />} />
-    <Route path="projects" element={<Projects />} />
+    <Route index element={<Home />} handle={'Amy | Web Developer'} />
+    <Route path="about" element={<About />} handle={'Amy | About'} />
+    <Route path="projects" element={<Projects />} handle={'Amy | Projects'} />
   </Route>
 )
 
