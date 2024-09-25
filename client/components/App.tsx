@@ -6,7 +6,7 @@ import Header from "./Header";
 export default function App() {
   const matches = useMatches()
   const pageTitle = matches[1].handle
-  useDocumentTitle(pageTitle ? `${pageTitle}` : 'Developort | Amy.')
+  useDocumentTitle(pageTitle ? `${pageTitle}` : 'Amy | Developort.')
   return (
     <div>
       <Header />
