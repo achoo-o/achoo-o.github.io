@@ -14,7 +14,8 @@
     "build:server": "esbuild --packages=external --platform=node --format=esm --outfile=dist/server.js --bundle server/index.ts",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "format": "prettier -w '**/*.{js,jsx,ts,tsx}'",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "main -d dist"
   },
   "eslintConfig": {
     "extends": "@devacademy/eslint-config/react",
