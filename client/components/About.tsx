@@ -6,8 +6,18 @@ export default function About() {
         <p className="mb-2">The background was made using p5.js</p>
         <a className="text-xl text-blue-100 hover:underline" href="https://editor.p5js.org/achoo-o/sketches/u-pKxOnxV">Sample here.</a>
         <p className="mt-2">My self-development journey started with&nbsp;
-          <a className="text-xl text-blue-100 hover:underline" href="https://www.theodinproject.com/">The Odin Project</a>, 
+          <a 
+          className="text-xl text-blue-100 hover:underline" 
+          href="https://www.theodinproject.com/">
+            The Odin Project
+          </a>, 
           whose Ruby course I&apos;m looking forward to revisiting.
+        </p>
+        <p className="mt-2">I am an alumni of&nbsp;
+          <a 
+          href="https://devacademy.co.nz/"
+          className="text-xl text-blue-100 hover:underline"
+          >Dev Academy Aotearoa</a>.
         </p>
         <p className="my-8">You can contact me at&nbsp;
           <a className="text-xl text-blue-100 hover:underline" href="mailto:dev@achoo-o.mozmail.com">dev@achoo-o.mozmail.com</a>.
