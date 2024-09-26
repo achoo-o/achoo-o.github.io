@@ -1,6 +1,7 @@
 import { Outlet, useMatches } from "react-router-dom";
 import useDocumentTitle from './hooks/use-document-title.ts'
 import Header from "./Header";
+import Art from "./animation/sketch.tsx";
 
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
   useDocumentTitle(pageTitle ? `${pageTitle}` : 'Amy | Developort.')
   return (
     <div>
+      <Art />
       <Header />
       <Outlet />
     </div>
