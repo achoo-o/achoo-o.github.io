@@ -1,8 +1,8 @@
 import * as React from "react";
-import { ReactP5Wrapper } from "@p5-wrapper/react";
+import { P5CanvasInstance, ReactP5Wrapper } from "@p5-wrapper/react";
 
 export default function Art() {
-  function sketch(p5) {
+  function sketch(p5: P5CanvasInstance) {
     const noiseMax = 5
     let zoff = 0
 
