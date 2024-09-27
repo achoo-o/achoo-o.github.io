@@ -1,8 +1,9 @@
 import { createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom'
 import App from './components/App.tsx'
-import Home from './components/Home.tsx'
-import About from './components/About.tsx'
-import Projects from './components/Projects.tsx'
+import Home from './components/Pages/Home.tsx'
+import About from './components/Pages/About.tsx'
+import Projects from './components/Pages/Projects.tsx'
+
 
 export const routes = createRoutesFromElements(
   <Route path="/" element={<App />}>
