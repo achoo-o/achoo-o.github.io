@@ -1,5 +1,9 @@
 # Developer Portfolio
 
+A simple portfolio to display projects I've worked on and a little bit about me.  
+
+Background was made using p5, integrated with the package @p5-wrapper/react.
+
 ### This app uses the following:
 <p align="left">
   <a href="https://skillicons.dev">
