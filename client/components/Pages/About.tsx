@@ -4,7 +4,13 @@ export default function About() {
       <h1 className="text-5xl text-white">About</h1>
       <section className="max-w-screen-md text-xl text-gray-200 text-center leading-loose">
         <p className="mb-2">The background was made using p5.js</p>
-        <a className="text-xl text-blue-100 hover:underline" href="https://editor.p5js.org/achoo-o/sketches/u-pKxOnxV">Sample here.</a>
+          <a 
+            className="text-xl text-blue-100 hover:underline" 
+            href="https://editor.p5js.org/achoo-o/sketches/u-pKxOnxV"
+            target="_blank" 
+            rel="noreferrer">
+            Sample here.
+          </a>
         <p className="mt-2">My self-development journey started with&nbsp;
           <a 
           className="text-xl text-blue-100 hover:underline" 
