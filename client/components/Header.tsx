@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet, useMatches } from "react-router-dom";
+import useDocumentTitle from "./hooks/use-document-title";
 
 export default function Header() {
   const nav = [
@@ -6,7 +7,11 @@ export default function Header() {
     {name: 'About', link: '/about'},
     {name: 'Projects', link: '/projects'},
   ]
+  const matches = useMatches()
+  const pageTitle = matches[1].handle
+  useDocumentTitle(pageTitle ? `${pageTitle}` : 'Amy | Developort.')
   return (
+    <>
     <section className="flex justify-center">
       <ul className="flex flex-row absolute top-0 gap-16 my-10">
         {nav.map((item, i) => {
@@ -19,5 +24,7 @@ export default function Header() {
         )})}
       </ul>
     </section>
+    <Outlet />
+    </>
   )
 }
