@@ -1,4 +1,4 @@
-import Art from "./animation/sketch";
+import Art from "./sketches/sketch";
 import Header from "./Header";
 
 
