@@ -1,6 +1,8 @@
 # Developer Portfolio
 
-A simple portfolio to display projects I've worked on and a little bit about me.  
+Thanks for visiting! You can view my portfolio at https://iamjackson.co.nz/
+
+This site is a simple portfolio to display projects I've worked on and a little bit about me.  
 
 Background was made using p5, integrated with the package @p5-wrapper/react.
 
