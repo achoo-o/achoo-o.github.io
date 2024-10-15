@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs"
-import projects from "../Data/projects"
+import projects from "../data/projects"
 
 export default function Projects() {
   const [ slide, setSlide ] = useState(0)
