@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section className="flex flex-col items-center gap-5 mt-44 p-2">
       <h1 className="text-5xl text-white">About</h1>
-      <section className="max-w-screen-md text-xl text-gray-200 text-center leading-loose">
+      <section className="max-w-screen-md text-xl mt-8 text-gray-200 text-center leading-loose">
         <p className="mb-2">The background was made using p5.js</p>
           <a 
             className="text-xl text-blue-100 hover:underline" 
@@ -29,7 +29,7 @@ export default function About() {
           </a>.
         </p>
       </section>
-        <span className="mt-3 text-white">
+        <span className="mt-6 text-white">
           <a className="text-xl text-blue-50 hover:underline" href="mailto:dev@achoo-o.mozmail.com">
             email
           </a>
@@ -38,7 +38,9 @@ export default function About() {
             github
           </a>
         </span>
-        <Skills />
+        <span className="mt-2 lg:mt-8">
+          <Skills />
+        </span>
     </section>
   )
 }

@@ -2,9 +2,9 @@ import iconList from "../data/skills"
 
 export default function Skills() {
   return (
-    <div className="transition-all flex flex-col justify-center items-center p-8 w-full">
+    <div className="transition-all flex flex-col justify-center items-center w-full">
       <section className='flex flex-col flex-wrap justify-center gap-6'>
-        <hr className="mb-5 mx-5 h-[2px] rounded-full bg-blue-100 border-0"></hr>
+        <hr className="mb-8 mx-5 h-[2px] rounded-full bg-blue-100 border-0"></hr>
         <span className="flex flex-wrap justify-center gap-8">
           {iconList.map((icon) => {
             return (
