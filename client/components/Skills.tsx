@@ -8,8 +8,8 @@ export default function Skills() {
         <span className="flex flex-wrap justify-center gap-8">
           {iconList.map((icon) => {
             return (
-              <span key={icon.name} className="flex flex-col items-center gap-2 group ">
-                <i className={`devicon-${icon.class} text-6xl text-gray-200`}></i>
+              <span key={icon.name} className="flex flex-col items-center gap-2 group">
+                <i className={`devicon-${icon.class} text-6xl text-gray-200`} aria-labelledby={`${icon.name} logo`}></i>
                 <p className="group-hover:opacity-100 opacity-0 text-gray-100 font-medium transition-all duration-300">
                   {icon.name}
                 </p>
