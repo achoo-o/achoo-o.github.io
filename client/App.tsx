@@ -1,5 +1,5 @@
-import Art from "./sketches/sketch";
-import Header from "./Header";
+import Art from "./components/sketches/sketch";
+import Header from "./components/Header";
 
 
 export default function App() {
