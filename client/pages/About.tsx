@@ -34,7 +34,7 @@ export default function About() {
             email
           </a>
           &nbsp;&nbsp;•&nbsp;&nbsp;
-          <a className="text-xl text-blue-50 hover:underline" href="mailto:dev@achoo-o.mozmail.com">
+          <a className="text-xl text-blue-50 hover:underline" href="https://github.com/achoo-o" target="_blank" rel="noreferrer">
             github
           </a>
         </span>
