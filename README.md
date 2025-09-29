@@ -1,6 +1,6 @@
 # Developer Portfolio
 
-Thanks for visiting! You can view my portfolio at https://iamjackson.co.nz/
+Thanks for visiting! You can view my portfolio at achoo-o.github.io
 
 This site is a simple portfolio to display projects I've worked on and a little bit about me.  
 
